@@ -1,0 +1,535 @@
+[
+  {
+    "aisle": "001",
+    "bays": [
+      {
+        "location": "002",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": ""
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "Sharp Sand",
+                "sku": "3663602123456",
+                "quantity": 56
+              }
+            ],
+            "date": "19/03/25"
+          }
+        ]
+      },
+      {
+        "location": "003",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "Multi-Finish",
+                "sku": "501534106087",
+                "quantity": 56
+              }
+            ],
+            "date": "19/03/25"
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "Multi-Finish",
+                "sku": "501534106087",
+                "quantity": 56
+              }
+            ],
+            "date": "19/03/25"
+          }
+        ]
+      },
+      {
+        "location": "004",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "Multi-Finish",
+                "sku": "501534106087",
+                "quantity": 56
+              }
+            ],
+            "date": "12/03/25"
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "Multi-Finish",
+                "sku": "501534106087",
+                "quantity": 56
+              }
+            ],
+            "date": "12/03/25"
+          }
+        ]
+      },
+      {
+        "location": "005",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "Multi-Finish",
+                "sku": "501534106087",
+                "quantity": 56
+              }
+            ],
+            "date": "19/03/25"
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "Multi-Finish",
+                "sku": "501534106087",
+                "quantity": 56
+              }
+            ],
+            "date": "19/03/25"
+          }
+        ]
+      },
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "Multi-Finish",
+                "sku": "501534106087",
+                "quantity": 56
+              }
+            ],
+            "date": "19/03/25"
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "Multi-Finish",
+                "sku": "501534106087",
+                "quantity": 56
+              }
+            ],
+            "date": "19/03/25"
+          },
+          {
+            "id": 3,
+            "products": [
+              {
+                "name": "Hardi-backer",
+                "sku": "871739903508",
+                "quantity": 10
+              }
+            ],
+            "date": "19/03/25"
+          },
+          {
+            "id": 4,
+            "products": [
+              {
+                "name": "Hardi-backer",
+                "sku": "871739903508",
+                "quantity": 10
+              }
+            ],
+            "date": "23/08/24"
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "Multi-Finish",
+                "sku": "501534106087",
+                "quantity": 56
+              }
+            ],
+            "date": "19/03/25"
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "Multi-Finish",
+                "sku": "501534106087",
+                "quantity": 56
+              }
+            ],
+            "date": "19/03/25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "078",
+    "bays": [
+      {
+        "location": "001",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "002",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "003",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "005",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "008",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "009",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "079",
+    "bays": [
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "010",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "012",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "014",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "015",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "033",
+    "bays": [
+      {
+        "location": "001",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "002",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "003",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "004",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "005",
+    "bays": [
+      {
+        "location": "002",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "003",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "004",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      },
+      {
+        "location": "005",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [],
+            "date": "11/11/11"
+          },
+          {
+            "id": 2,
+            "products": [],
+            "date": "11/11/11"
+          }
+        ]
+      }
+    ]
+  }
+]
