@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topstock Management - Dylan</title>
+    <script src="https://kit.fontawesome.com/f075b91897.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #454545;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            font-size: 0.6em;
+            color: white;
+            padding: 0.5em;
+            font-family: poppins, sans-serif;
+            width: 100%;
+        }
+
+        .search-bar {
+            margin: 10px;
+            padding: 8px;
+            width: 50%;
+            border: 1px solid #FF6000;
+            border-radius: 5px;
+            color:#aeaeae;
+            font-size: 1rem;
+            background-color: #333;
+        }
+
+        .search-bar:focus {
+            outline: none;
+            border-color: #ff6000;
+            box-shadow: 0 0 5px rgba(255, 96, 0, 0.5);
+        }
+
+        .aisle {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: #333;
+            color: #aeaeae;
+            padding: 0.8em;
+            border-radius: 5px;
+            border-bottom: 1px solid #FF6000;
+            margin: 0.3em;
+        }
+
+        .aislehead {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .aislehead h2 {
+            font-size: 1em;
+            font-family: Poppins, sans-serif;
+        }
+
+        .bays {
+            display: flex;
+            flex-direction: row;
+            padding: 3px;
+            width: 100%;
+            gap: 1em;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .bay {
+            margin: 0.5em;
+            background-color: #5a5a5a;
+            padding: 0.8em;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .bay-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .topstocks {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .topstock {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: #444;
+            border-radius: 5px;
+            padding: 0.5em;
+            width: 40%;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .topstock-header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .topstock-header h4 {
+            margin: 0;
+            font-size: 1rem;
+            color: #aaa;
+        }
+
+        .topstock-header .actions {
+            display: flex;
+            gap: 5px;
+        }
+
+        .topstock-header button {
+            background-color: #FF6000;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 5px 10px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .topstock-header button.clear-button {
+            background-color: #dc3545;
+        }
+
+        .topstock-header button:hover {
+            opacity: 0.9;
+        }
+
+        .topstock-content .product {
+            margin-bottom: 5px;
+        }
+
+        .topstock-content .empty-message {
+            font-style: italic;
+            color: #999;
+        }
+
+        .toggle-button {
+            color: white;
+            background-color: #444;
+            border: 1px solid #FF6000;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .toggle-button:hover {
+            background-color: #FF6000;
+            color: black;
+            cursor: pointer;
+        }
+
+        .toggle-bay-button {
+            color: white;
+            background-color: #444;
+            border: 1px solid #FF6000;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Topstock Management - Killingbeck 1210</h1>
+        <input
+            type="text"
+            id="search-bar"
+            placeholder="Search aisles..."
+            class="search-bar"
+        />
+    </div>
+    <div class="container" id="app">
+        <!-- Aisles and bays will be dynamically inserted here -->
+    </div>
+    <script>
+        fetch('/api/aisles')
+            .then(response => response.json())
+            .then(data => {
+                const app = document.getElementById('app');
+                const searchBar = document.getElementById('search-bar');
+
+                function renderAisles(filteredData) {
+                    app.innerHTML = ''; // Clear the container
+                    filteredData.forEach(aisle => {
+                        const aisleDiv = document.createElement('div');
+                        aisleDiv.className = 'aisle';
+
+                        const headerDiv = document.createElement('div');
+                        headerDiv.className = 'aislehead';
+
+                        const aisleTitle = document.createElement('h2');
+                        aisleTitle.textContent = `Aisle: ${aisle.aisle}`;
+                        headerDiv.appendChild(aisleTitle);
+
+                        const toggleAisleButton = document.createElement('button');
+                        toggleAisleButton.textContent = '▼';
+                        toggleAisleButton.className = 'toggle-button';
+                        toggleAisleButton.addEventListener('click', () => {
+                            const baysDiv = aisleDiv.querySelector('.bays');
+                            if (baysDiv.style.display === 'none') {
+                                baysDiv.style.display = 'flex';
+                                toggleAisleButton.textContent = '▲';
+                            } else {
+                                baysDiv.style.display = 'none';
+                                toggleAisleButton.textContent = '';
+                            }
+                        });
+                        headerDiv.appendChild(toggleAisleButton);
+                        aisleDiv.appendChild(headerDiv);
+
+                        const baysDiv = document.createElement('div');
+                        baysDiv.className = 'bays';
+                        baysDiv.style.display = 'none'; // Initially hide the bays
+
+                        aisle.bays.forEach(bay => {
+                            const bayDiv = document.createElement('div');
+                            bayDiv.className = 'bay';
+
+                            const bayHeader = document.createElement('div');
+                            bayHeader.className = 'bay-header';
+
+                            const bayTitle = document.createElement('p');
+                            bayTitle.textContent = `Bay: ${bay.location}`;
+                            bayHeader.appendChild(bayTitle);
+
+                            const toggleBayButton = document.createElement('button');
+                            toggleBayButton.textContent = '▼';
+                            toggleBayButton.className = 'toggle-bay-button';
+                            toggleBayButton.addEventListener('click', () => {
+                                const topstocksDiv = bayDiv.querySelector('.topstocks');
+                                if (topstocksDiv.style.display === 'none') {
+                                    topstocksDiv.style.display = 'flex';
+                                    toggleBayButton.textContent = '▲';
+                                } else {
+                                    topstocksDiv.style.display = 'none';
+                                    toggleBayButton.textContent = '▼';
+                                }
+                            });
+                            bayHeader.appendChild(toggleBayButton);
+                            bayDiv.appendChild(bayHeader);
+
+                            const topstocksDiv = document.createElement('div');
+                            topstocksDiv.className = 'topstocks';
+                            topstocksDiv.style.display = 'none'; // Initially hide the topstocks
+
+                            bay.topstocks.forEach(topstock => {
+                                const topstockDiv = document.createElement('div');
+                                topstockDiv.className = 'topstock';
+
+                                const topstockHeader = document.createElement('div');
+                                topstockHeader.className = 'topstock-header';
+
+                                const topstockTitle = document.createElement('h4');
+                                topstockTitle.textContent = `Topstock ${topstock.id}`;
+                                topstockHeader.appendChild(topstockTitle);
+
+                                const actionsDiv = document.createElement('div');
+                                actionsDiv.className = 'actions';
+
+                                const editButton = document.createElement('button');
+                                editButton.textContent = 'Edit';
+                                editButton.className = 'edit-button';
+                                editButton.addEventListener('click', () => {
+                                    editTopstock(topstock, bay.location, aisle.aisle);
+                                });
+                                actionsDiv.appendChild(editButton);
+
+                                const clearButton = document.createElement('button');
+                                clearButton.textContent = 'Clear';
+                                clearButton.className = 'clear-button';
+                                clearButton.addEventListener('click', () => {
+                                    clearTopstock(topstock, bay.location, aisle.aisle);
+                                });
+                                actionsDiv.appendChild(clearButton);
+
+                                topstockHeader.appendChild(actionsDiv);
+                                topstockDiv.appendChild(topstockHeader);
+
+                                const topstockContent = document.createElement('div');
+                                topstockContent.className = 'topstock-content';
+
+                                const topstockDate = document.createElement('p');
+                                topstockDate.textContent = `Date: ${topstock.date}`;
+                                topstockContent.appendChild(topstockDate);
+
+                                if (topstock.products.length > 0) {
+                                    topstock.products.forEach(product => {
+                                        const productDiv = document.createElement('div');
+                                        productDiv.className = 'product';
+                                        productDiv.textContent = `${product.name} (SKU: ${product.sku}, Qty: ${product.quantity})`;
+                                        topstockContent.appendChild(productDiv);
+                                    });
+                                } else {
+                                    const emptyMessage = document.createElement('p');
+                                    emptyMessage.className = 'empty-message';
+                                    emptyMessage.textContent = 'No products';
+                                    topstockContent.appendChild(emptyMessage);
+                                }
+
+                                topstockDiv.appendChild(topstockContent);
+                                topstocksDiv.appendChild(topstockDiv);
+                            });
+
+                            bayDiv.appendChild(topstocksDiv);
+                            baysDiv.appendChild(bayDiv);
+                        });
+
+                        aisleDiv.appendChild(baysDiv);
+                        app.appendChild(aisleDiv);
+                    });
+                }
+
+                // Initial render
+                renderAisles(data);
+
+                // Add event listener to the search bar
+                searchBar.addEventListener('input', event => {
+                    const searchTerm = event.target.value.toLowerCase();
+                    const filteredData = data.filter(aisle =>
+                        aisle.aisle.toLowerCase().includes(searchTerm)
+                    );
+                    renderAisles(filteredData);
+                });
+            })
+            .catch(error => console.error('Error fetching aisle data:', error));
+
+        function editTopstock(topstock, bayLocation, aisleNumber) {
+            const newProductName = prompt(`Edit Topstock ${topstock.id} in Bay ${bayLocation}, Aisle ${aisleNumber}\nEnter product name:`, topstock.products[0]?.name || '');
+            const newProductSku = prompt(`Enter product SKU:`, topstock.products[0]?.sku || '');
+            const newProductQuantity = prompt(`Enter product quantity:`, topstock.products[0]?.quantity || 0);
+            const newDate = prompt(`Enter new date:`, topstock.date || '');
+
+            if (newProductName && newProductSku && newProductQuantity && newDate) {
+                topstock.products = [
+                    {
+                        name: newProductName,
+                        sku: newProductSku,
+                        quantity: parseInt(newProductQuantity, 10)
+                    }
+                ];
+                topstock.date = newDate;
+
+                fetch('/api/update-topstock', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ aisleNumber, bayLocation, topstock })
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            alert('Topstock updated successfully!');
+                            location.reload();
+                        } else {
+                            alert('Failed to update topstock.');
+                        }
+                    })
+                    .catch(error => console.error('Error updating topstock:', error));
+            }
+        }
+
+        function clearTopstock(topstock, bayLocation, aisleNumber) {
+            if (confirm(`Are you sure you want to clear Topstock ${topstock.id} in Bay ${bayLocation}, Aisle ${aisleNumber}?`)) {
+                topstock.products = [];
+                topstock.date = '';
+
+                fetch('/api/update-topstock', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ aisleNumber, bayLocation, topstock })
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            alert('Topstock cleared successfully!');
+                            location.reload();
+                        } else {
+                            alert('Failed to clear topstock.');
+                        }
+                    })
+                    .catch(error => console.error('Error clearing topstock:', error));
+            }
+        }
+    </script>
+</body>
+</html>
