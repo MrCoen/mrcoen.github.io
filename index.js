@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 // Load aisles data from the JSON file
-const aislesFilePath = path.join(__dirname, 'data', 'aisles.json');
+const aislesFilePath = path.join('data/aisles.json');
 let aisles = [];
 
 // Read the JSON file and parse it
