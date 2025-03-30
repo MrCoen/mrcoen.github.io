@@ -1,28 +1,197 @@
 [
   {
     "aisle": "001",
+    "name": "Building Aggregates",
+    "area": "Building",
     "bays": [
       {
-        "location": "002",
+        "location": "03",
         "topstocks": [
           {
             "id": 1,
-            "products": [],
-            "date": ""
+            "products": [
+              {
+                "name": "Multi-finish",
+                "barcode": "1234567890",
+                "quantity": 56,
+                "expdate": "2025-03-20",
+                "date": "2025-03-29",
+                "department": "building"
+              }
+            ]
           },
           {
             "id": 2,
             "products": [
               {
-                "name": "Sharp Sand",
-                "sku": "3663602123456",
-                "quantity": 56
+                "name": "Storage Boxes",
+                "barcode": "2653216543220",
+                "quantity": 87,
+                "expdate": "2025-03-12",
+                "date": "2025-03-27",
+                "department": "showrooms"
               }
-            ],
-            "date": "19/03/25"
+            ]
           }
         ]
       },
+      {
+        "location": "04",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "05",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "06",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "07",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "002",
+    "name": "Timber",
+    "area": "Building",
+    "bays": [
       {
         "location": "003",
         "topstocks": [
@@ -30,23 +199,27 @@
             "id": 1,
             "products": [
               {
-                "name": "Multi-Finish",
-                "sku": "501534106087",
-                "quantity": 56
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
               }
-            ],
-            "date": "19/03/25"
+            ]
           },
           {
             "id": 2,
             "products": [
               {
-                "name": "Multi-Finish",
-                "sku": "501534106087",
-                "quantity": 56
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
               }
-            ],
-            "date": "19/03/25"
+            ]
           }
         ]
       },
@@ -57,286 +230,27 @@
             "id": 1,
             "products": [
               {
-                "name": "Multi-Finish",
-                "sku": "501534106087",
-                "quantity": 56
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
               }
-            ],
-            "date": "12/03/25"
+            ]
           },
           {
             "id": 2,
             "products": [
               {
-                "name": "Multi-Finish",
-                "sku": "501534106087",
-                "quantity": 56
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
               }
-            ],
-            "date": "12/03/25"
-          }
-        ]
-      },
-      {
-        "location": "005",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [
-              {
-                "name": "Multi-Finish",
-                "sku": "501534106087",
-                "quantity": 56
-              }
-            ],
-            "date": "19/03/25"
-          },
-          {
-            "id": 2,
-            "products": [
-              {
-                "name": "Multi-Finish",
-                "sku": "501534106087",
-                "quantity": 56
-              }
-            ],
-            "date": "19/03/25"
-          }
-        ]
-      },
-      {
-        "location": "006",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [
-              {
-                "name": "Multi-Finish",
-                "sku": "501534106087",
-                "quantity": 56
-              }
-            ],
-            "date": "19/03/25"
-          },
-          {
-            "id": 2,
-            "products": [
-              {
-                "name": "Multi-Finish",
-                "sku": "501534106087",
-                "quantity": 56
-              }
-            ],
-            "date": "19/03/25"
-          },
-          {
-            "id": 3,
-            "products": [
-              {
-                "name": "Hardi-backer",
-                "sku": "871739903508",
-                "quantity": 10
-              }
-            ],
-            "date": "19/03/25"
-          },
-          {
-            "id": 4,
-            "products": [
-              {
-                "name": "Hardi-backer",
-                "sku": "871739903508",
-                "quantity": 10
-              }
-            ],
-            "date": "23/08/24"
-          }
-        ]
-      },
-      {
-        "location": "007",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [
-              {
-                "name": "Multi-Finish",
-                "sku": "501534106087",
-                "quantity": 56
-              }
-            ],
-            "date": "19/03/25"
-          },
-          {
-            "id": 2,
-            "products": [
-              {
-                "name": "Multi-Finish",
-                "sku": "501534106087",
-                "quantity": 56
-              }
-            ],
-            "date": "19/03/25"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "aisle": "078",
-    "bays": [
-      {
-        "location": "001",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      },
-      {
-        "location": "002",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      },
-      {
-        "location": "003",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      },
-      {
-        "location": "005",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      },
-      {
-        "location": "006",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      },
-      {
-        "location": "007",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      },
-      {
-        "location": "008",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      },
-      {
-        "location": "009",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "aisle": "079",
-    "bays": [
-      {
-        "location": "006",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      },
-      {
-        "location": "007",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
+            ]
           }
         ]
       },
@@ -345,13 +259,60 @@
         "topstocks": [
           {
             "id": 1,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           },
           {
             "id": 2,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "011",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           }
         ]
       },
@@ -360,13 +321,60 @@
         "topstocks": [
           {
             "id": 1,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           },
           {
             "id": 2,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "013",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           }
         ]
       },
@@ -375,13 +383,29 @@
         "topstocks": [
           {
             "id": 1,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           },
           {
             "id": 2,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           }
         ]
       },
@@ -390,48 +414,247 @@
         "topstocks": [
           {
             "id": 1,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           },
           {
             "id": 2,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           }
         ]
       }
     ]
   },
   {
-    "aisle": "033",
+    "aisle": "003",
+    "name": "Plumbing",
+    "area": "Building",
     "bays": [
       {
-        "location": "001",
+        "location": "010",
         "topstocks": [
           {
             "id": 1,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           },
           {
             "id": 2,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           }
         ]
       },
+      {
+        "location": "012",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "014",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "016",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "017",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "018",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "023",
+    "name": "Kitchen Accessories",
+    "area": "Shared",
+    "bays": [
       {
         "location": "002",
         "topstocks": [
           {
             "id": 1,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           },
           {
             "id": 2,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           }
         ]
       },
@@ -440,13 +663,29 @@
         "topstocks": [
           {
             "id": 1,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           },
           {
             "id": 2,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           }
         ]
       },
@@ -455,63 +694,29 @@
         "topstocks": [
           {
             "id": 1,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           },
           {
             "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "aisle": "005",
-    "bays": [
-      {
-        "location": "002",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      },
-      {
-        "location": "003",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
-          }
-        ]
-      },
-      {
-        "location": "004",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [],
-            "date": "11/11/11"
-          },
-          {
-            "id": 2,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           }
         ]
       },
@@ -520,13 +725,2782 @@
         "topstocks": [
           {
             "id": 1,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           },
           {
             "id": 2,
-            "products": [],
-            "date": "11/11/11"
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "008",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "009",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "010",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "011",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "012",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "024",
+    "name": "Bathroom Accessories",
+    "area": "Shared",
+    "bays": [
+      {
+        "location": "008",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "009",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "010",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "011",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "012",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "025",
+    "name": "Showers",
+    "area": "Shared",
+    "bays": [
+      {
+        "location": "002",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "003",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "004",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "005",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "009",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "010",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "011",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "013",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "014",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "015",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "016",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "031",
+    "name": "Rugs Cleaning",
+    "area": "Paint",
+    "bays": [
+      {
+        "location": "014",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "015",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "016",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "017",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "018",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "019",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "020",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "032",
+    "name": "Laminate Flooring",
+    "area": "Decor",
+    "bays": [
+      {
+        "location": "002",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "003",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "004",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "005",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "008",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "033",
+    "name": "Flooring and Accessories",
+    "area": "Decor",
+    "bays": [
+      {
+        "location": "001",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "Dolce Laminate",
+                "barcode": "3663602123456",
+                "quantity": 52,
+                "expdate": "2025-03-13",
+                "date": "2025-03-25",
+                "department": "decor"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "002",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "003",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "004",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "005",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "008",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "009",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "010",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "035",
+    "name": "Worktops T/Seats Accs",
+    "area": "Shared",
+    "bays": [
+      {
+        "location": "004",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "005",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "034",
+    "name": "Underlay Lining Paper",
+    "area": "Paint",
+    "bays": [
+      {
+        "location": "001",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "002",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "003",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "004",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "005",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "036",
+    "name": "Bedrooms Worktops",
+    "area": "Shared",
+    "bays": [
+      {
+        "location": "003",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "004",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "052",
+    "name": "Dec Aggregates",
+    "area": "Seasonal",
+    "bays": [
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "008",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "076",
+    "name": "IntExternal Doors",
+    "area": "Building",
+    "bays": [
+      {
+        "location": "002",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "003",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "004",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "078",
+    "name": "Building Aggregates 2",
+    "area": "Building",
+    "bays": [
+      {
+        "location": "001",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "002",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "003",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "004",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "005",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "008",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "009",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "aisle": "079",
+    "name": "Building/Loft Insulation",
+    "area": "Building",
+    "bays": [
+      {
+        "location": "006",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "007",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "010",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "011",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "012",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "014",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "location": "015",
+        "topstocks": [
+          {
+            "id": 1,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "products": [
+              {
+                "name": "",
+                "barcode": "",
+                "quantity": 0,
+                "expdate": "",
+                "date": "",
+                "department": ""
+              }
+            ]
           }
         ]
       }
