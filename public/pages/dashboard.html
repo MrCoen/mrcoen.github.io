@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMS - Dashboard </title>
+    <link rel="stylesheet" href="../index.css"/>
+    <link rel="stylesheet" href="../assets/css/dashboard.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body >
+    <script src="../js/dashboard.js" defer></script>
+    <div class="header">
+      <div class="toptopnav">
+        <h1>Topstock Management System</h1>  
+      </div>
+    </div>
+
+    <div class="dashboard-container">
+      <div class="dashboard-section">
+        <h2>Totals</h2>
+        <ul>
+          <li>Total Aisles: <span id="dashboard-total-aisles">0</span></li>
+          <li>Total Bays: <span id="dashboard-total-bays">0</span></li>
+          <li>Total Topstocks: <span id="dashboard-total-topstocks">0</span></li>
+          <li>Total Free Topstocks: <span id="dashboard-total-free-topstocks">0</span></li>
+          <li>Total Products: <span id="dashboard-total-products">0</span></li>
+        </ul>
+      </div>
+      
+      <div class="dashboard-section">
+        <h2>Closest to Expiry</h2>
+        <ul id="expiry-list">
+          <!-- List items will be dynamically added here -->
+        </ul>
+      </div>
+      <div class="dashboard-section">
+        <h2>Longest Sitting Products</h2>
+        <ul id="longest-sitting-list">
+          <!-- List items will be dynamically added here -->
+        </ul>
+      </div>
+      <div class="dashboard-section">
+        <h2>Topstocks Free vs In Use</h2>
+        <canvas id="topstocksChart"></canvas>
+      </div>
+      <div class="dashboard-section">
+        <h2>Topstocks By Department</h2>
+        <canvas id="departmentChart"></canvas>
+      </div>
+    </div>
+      
+
+    <div class="footer">
+      <div class="foot">
+        <p>Topstock Management System &copy; 2023</p>
+        <p>Developed by Dylan Coen (781422)</p>
+      </div>
+      <div class="totals">
+        <p>Lost? :<a href="/">Go Home</a></p>
+      </div>
+    </div>
+    
+  </body>
+</html>
