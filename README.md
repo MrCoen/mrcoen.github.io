@@ -9,9 +9,9 @@ Welcome to the **Topstock Management System (TMS)**, a web-based application des
 
 ### 🛠️ Core Functionality
 - **Aisle Management**: Add, edit, and delete aisles with associated bays and topstocks.
-- **Bay and Topstock Management**: Dynamically manage bays and their topstocks, including product details.
+- **Bay and Topstock Management**: Manage bays and their topstocks, including product details.
 - **Product Tracking**: Track product details such as name, barcode, quantity, expiry date, and department.
-- **Interactive Dashboard**: Visualize key metrics like:
+- **Interactive Dashboard**: Key metrics like:
   - Total aisles, bays, and topstocks.
   - Closest-to-expiry products.
   - Longest-sitting products.
@@ -29,7 +29,7 @@ Welcome to the **Topstock Management System (TMS)**, a web-based application des
 - Sort products by date (most recent or oldest).
 
 ### 🖥️ Responsive Design
-- Fully responsive layout for seamless use on desktops, tablets, and mobile devices.
+- Fully responsive layout for use on desktops, tablets, and mobile devices.
 
 ### Technologies Used
 - Backend
