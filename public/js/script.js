@@ -509,9 +509,9 @@ function openEditProductsModal(aisleNumber, bayLocation, topstock) {
 
   topstock.products.forEach((product, productIndex) => {
     const productDiv = document.createElement("div");
-  productDiv.className = "product-input";
+    productDiv.className = "product-input";
 
-  const prodInfo = document.createElement("div");
+    const prodInfo = document.createElement("div");
     prodInfo.className = "prod-info";
 
     const prodDate = document.createElement("div");
@@ -520,47 +520,60 @@ function openEditProductsModal(aisleNumber, bayLocation, topstock) {
     const prodExt = document.createElement("div");
     prodInfo.className = "prod-ext";
 
+  const productNameLabel = document.createElement("label");
+  productNameLabel.textContent = "Product Name:";
   const productNameInput = document.createElement("input");
   productNameInput.type = "text";
-  productNameInput.placeholder = product.name || "No Product";
+  productNameInput.placeholder = "Product Name";
   productNameInput.className = "edit-product-name";
   prodInfo.appendChild(productNameInput);
 
+  const productBarcodeLabel = document.createElement("label");
+  productBarcodeLabel.textContent = "Barcode:";
   const productBarcodeInput = document.createElement("input");
   productBarcodeInput.type = "text";
-  productBarcodeInput.placeholder = product.barcode || "No Barcode";
+  productBarcodeInput.placeholder = "Barcode";
   productBarcodeInput.className = "edit-product-barcode";
   prodInfo.appendChild(productBarcodeInput);
 
+  const productQuantityLabel = document.createElement("label");
+  productQuantityLabel.textContent = "Quantity:";
   const productQuantityInput = document.createElement("input");
   productQuantityInput.type = "number";
-  productQuantityInput.placeholder = product.quantity;
+  productQuantityInput.placeholder = "Quantity";
   productQuantityInput.className = "edit-product-quantity";
   prodExt.appendChild(productQuantityInput);
 
+  const productExpDateLabel = document.createElement("label");
+  productExpDateLabel.textContent = "Expiry Date:";
   const productExpDateInput = document.createElement("input");
   productExpDateInput.type = "date";
-  productExpDateInput.placeholder = product.expdate;
+  productExpDateInput.placeholder = "Expiry Date";
   productExpDateInput.className = "edit-product-expdate";
   prodDate.appendChild(productExpDateInput);
 
+  const productUpdateDateInput = document.createElement("label");
+  productUpdateDateInput.type = "Date:";
   const productupdate = document.createElement("input");
   productupdate.type = "date";
-  productupdate.placeholder = product.date;
+  productupdate.placeholder = "Date";
   productupdate.className = "edit-product-update";
   prodDate.appendChild(productupdate);
-  
+
+
+  const productDepartmentLabel = document.createElement("label");
+  productDepartmentLabel.textContent = "Department:";
   const productDepartment = document.createElement("input");
   productDepartment.type = "text";
-  productDepartment.placeholder = product.department || "No Assigned Department";
-  productDepartment.className = "edit-product-department";
+  productDepartment.placeholder = "Product Department";
+  productDepartment.className = "edit-product-barcode";
   prodExt.appendChild(productDepartment);
 
   productDiv.appendChild(prodInfo)
   productDiv.appendChild(prodExt)
   productDiv.appendChild(prodDate)
 
-
+    // Add a delete button for the product
     const deleteProductButton = document.createElement("button");
     deleteProductButton.textContent = "Delete";
     deleteProductButton.className = "delete-product-button";
@@ -599,36 +612,49 @@ document.getElementById("add-product-button").addEventListener("click", () => {
     const prodExt = document.createElement("div");
     prodInfo.className = "prod-ext";
 
+  const productNameLabel = document.createElement("label");
+  productNameLabel.textContent = "Product Name:";
   const productNameInput = document.createElement("input");
   productNameInput.type = "text";
   productNameInput.placeholder = "Product Name";
   productNameInput.className = "edit-product-name";
   prodInfo.appendChild(productNameInput);
 
+  const productBarcodeLabel = document.createElement("label");
+  productBarcodeLabel.textContent = "Barcode:";
   const productBarcodeInput = document.createElement("input");
   productBarcodeInput.type = "text";
   productBarcodeInput.placeholder = "Barcode";
   productBarcodeInput.className = "edit-product-barcode";
   prodInfo.appendChild(productBarcodeInput);
 
+  const productQuantityLabel = document.createElement("label");
+  productQuantityLabel.textContent = "Quantity:";
   const productQuantityInput = document.createElement("input");
   productQuantityInput.type = "number";
   productQuantityInput.placeholder = "Quantity";
   productQuantityInput.className = "edit-product-quantity";
   prodExt.appendChild(productQuantityInput);
 
+  const productExpDateLabel = document.createElement("label");
+  productExpDateLabel.textContent = "Expiry Date:";
   const productExpDateInput = document.createElement("input");
   productExpDateInput.type = "date";
   productExpDateInput.placeholder = "Expiry Date";
   productExpDateInput.className = "edit-product-expdate";
   prodDate.appendChild(productExpDateInput);
 
+  const productUpdateDateInput = document.createElement("label");
+  productUpdateDateInput.type = "Date:";
   const productupdate = document.createElement("input");
   productupdate.type = "date";
-  productupdate.placeholder = "Expiry Date";
-  productupdate.className = "edit-product-expdate";
+  productupdate.placeholder = "Date";
+  productupdate.className = "edit-product-update";
   prodDate.appendChild(productupdate);
-  
+
+
+  const productDepartmentLabel = document.createElement("label");
+  productDepartmentLabel.textContent = "Department:";
   const productDepartment = document.createElement("input");
   productDepartment.type = "text";
   productDepartment.placeholder = "Product Department";
