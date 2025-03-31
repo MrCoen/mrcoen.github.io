@@ -1,6 +1,7 @@
-# Topstock Management System (TMS) - https://mrcoen-github-io.onrender.com/
+# Topstock Management System (TMS) - 
+https://mrcoen-github-io.onrender.com/
 
-Welcome to the **Topstock Management System (TMS)**, a web-based application designed to streamline inventory management for aisles, bays, and topstocks in retail environments. This system provides an intuitive interface for managing stock, tracking product details, and visualizing data through interactive dashboards.
+Welcome to the **Topstock Management System (TMS)**, a web-based application designed to streamline inventory management for aisles, bays, and topstocks in retail environments. This system provides a Digital interface for managing stock, tracking product details, and visualizing data through interactive dashboards.
 
 ---
 
@@ -31,19 +32,16 @@ Welcome to the **Topstock Management System (TMS)**, a web-based application des
 - Fully responsive layout for seamless use on desktops, tablets, and mobile devices.
 
 ### Technologies Used
--Backend
-   -Node.js: Server-side runtime.
-   -Express.js: Web framework for building RESTful APIs.
-   ---
--Frontend
-   -HTML5, CSS3, JavaScript: Core web technologies.
-   -Chart.js: For interactive data visualization.
-   ---
--Data Storage
-   -JSON: Used as a lightweight database for storing aisle, bay, and topstock data.
+- Backend
+  - Node.js: Server-side runtime.
+  - Express.js: Web framework for building RESTful APIs.
+- Frontend
+  - HTML5, CSS3, JavaScript: Core web technologies.
+  - Chart.js: For interactive data visualization.
+- Data Storage
+  - JSON: Used as a lightweight database for storing aisle, bay, and topstock data.
 
 ---
-                                          # Project documentation
 
 ## License
 
