@@ -485,11 +485,14 @@
       }
       .product-input{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         width: 100%;
       }
+
+
       
 
       .closebtn{
@@ -527,6 +530,7 @@
         color: white;
         font-family: poppins, sans-serif;
         width: 100vw;
+        flex-wrap: wrap;
       }
       .foot{
         display: flex;
@@ -534,6 +538,7 @@
         justify-content: space-between;
         align-items: flex-start;
         text-align: left;
+        flex-wrap: wrap;
         width:fit-content;
       }
       .totals{
