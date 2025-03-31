@@ -34,31 +34,16 @@ Welcome to the **Topstock Management System (TMS)**, a web-based application des
 -Backend
    -Node.js: Server-side runtime.
    -Express.js: Web framework for building RESTful APIs.
+   ---
 -Frontend
    -HTML5, CSS3, JavaScript: Core web technologies.
    -Chart.js: For interactive data visualization.
+   ---
 -Data Storage
    -JSON: Used as a lightweight database for storing aisle, bay, and topstock data.
 
 ---
-mrcoen.github.io/
-├── data/
-│   └── [aisles.json]                                       # JSON file containing aisle, bay, and topstock data
-├── public/
-│   ├── assets/                                             # Static assets (CSS, images, etc.)
-│   │   ├── css/
-│   │   │   ├── [index.css]                                 # Main CSS for the homepage
-│   │   │   ├── [dashboard.css]                             # CSS for the dashboard
-│   │   └── images/                                         # Icons and images
-│   ├── js/
-│   │   ├── [script.js]                                     # Main JavaScript for the homepage
-│   │   ├── [dashboard.js]                                  # JavaScript for the dashboard
-│   ├── [index.html]                                        # Homepage
-│   ├── pages/
-│   │   └── [dashboard.html]                                # Dashboard page
-├── [index.js]                                              # Express server
-├── [package.json]                                          # Project dependencies
-└── README.md                                               # Project documentation
+                                          # Project documentation
 
 ## License
 
