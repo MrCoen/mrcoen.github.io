@@ -24,88 +24,148 @@
       </div>
       <div class="bottomnav">
         <div class="filter-container">
-          <select id="date-filter">
-            <option value="none">Sort by Date</option>
-            <option value="recent">Most Recent</option>
-            <option value="oldest">Oldest</option>
-          </select>
-          <select id="exp-filter">
-            <option value="none">Filter by Expiration</option>
-            <option value="expired">Expired</option>
-            <option value="not-expired">Not Expired</option>
-          </select>
-          <select id="area-filter">
-            <option value="none">Filter by Area</option>
-            <option value="shared">Shared</option>
-            <option value="paint">Paint</option>
-            <option value="seasonal">Seasonal</option>
-            <option value="building">Building</option>
-            <option value="showrooms">Showrooms</option>
-          </select>
-          <select id="department-filter">
-            <option value="none">Filter by Stock Type</option>
-            <option value="Building">Building</option>
-            <option value="Seasonal">Seasonal</option>
-            <option value="Showrooms">Showrooms</option>
-            <option value="Decor">Decor</option>
-            <option value="Promo">Promo</option>
-          </select>
+          <div class="filter-wrapper">
+            <select id="date-filter">
+              <option value="none">Sort by Date</option>
+              <option value="recent">Most Recent</option>
+              <option value="oldest">Oldest</option>
+            </select>
+            <img src="assets/droparrow.svg" class="dropdown-icon" alt="Dropdown Icon" />
+          </div>
+          <div class="filter-wrapper">
+            <select id="exp-filter">
+              <option value="none">Filter by Expiration</option>
+              <option value="expired">Expired</option>
+              <option value="not-expired">Not Expired</option>
+            </select>
+            <img src="assets/droparrow.svg" class="dropdown-icon" alt="Dropdown Icon" />
+          </div>
+          <div class="filter-wrapper">
+            <select id="area-filter">
+              <option value="none">Filter by Area</option>
+              <option value="shared">Shared</option>
+              <option value="paint">Paint</option>
+              <option value="seasonal">Seasonal</option>
+              <option value="building">Building</option>
+              <option value="showrooms">Showrooms</option>
+            </select>
+            <img src="assets/droparrow.svg" class="dropdown-icon" alt="Dropdown Icon" />
+          </div>
+          <div class="filter-wrapper">
+            <select id="department-filter">
+              <option value="none">Filter by Stock Type</option>
+              <option value="Building">Building</option>
+              <option value="Seasonal">Seasonal</option>
+              <option value="Showrooms">Showrooms</option>
+              <option value="Decor">Decor</option>
+              <option value="Promo">Promo</option>
+            </select>
+            <img src="assets/droparrow.svg" class="dropdown-icon" alt="Dropdown Icon" />
+          </div>
         </div>
       </div>
     </div>
     <div class="container" id="app">
       <!-- Aisles and bays will be dynamically inserted here -->
     </div>
-    <div id="edit-aisle-form" class="modal" style="display: none">
+
+    <div id="edit-aisle-form" class="modal" style="display: none;">
       <div class="modal-content">
-        <div class="top-form">
-          <h2>Edit Aisle</h2>
+        <div class="modal-header">
+          <h2>Edit Aisle Information</h2>
           <button id="close-edit-modal" class="closebtn">
-            <img src="assets/close.svg" class="dropdown" alt="" />
+            <img src="assets/close.svg" alt="Close" />
           </button>
         </div>
         <form id="edit-aisle-form-content">
-          <label for="edit-aisle-number">Aisle Number:</label>
-          <input type="text" id="edit-aisle-number" required />
-
-          <label for="edit-aisle-name">Aisle Name:</label>
-          <input type="text" id="edit-aisle-name" required />
-
-          <label for="edit-aisle-area">Aisle Area:</label>
-          <input type="text" id="edit-aisle-area" required />
-
-          <div id="edit-bays-container"></div>
-
-          <button type="button" id="add-bay-button">Add Bay</button>
-          <button type="submit">Save Changes</button>
+          <div class="aisle-info">
+            <div class="form-group">
+              <label for="edit-aisle-number">Aisle Number:</label>
+              <input type="text" id="edit-aisle-number" required placeholder="xxx" />
+            </div>
+            <div class="form-group">
+              <label for="edit-aisle-name">Aisle Name:</label>
+              <input type="text" id="edit-aisle-name" required placeholder="Aisle Name" />
+            </div>
+            <div class="form-group">
+              <label for="edit-aisle-area">Aisle Area:</label>
+              <input type="text" id="edit-aisle-area" required placeholder="e.g. laminate..." />
+            </div>
+          </div>
+          <div id="edit-bays-container">
+            <!-- Bays will be dynamically added here -->
+          </div>
+          <div class="form-actions">
+            <button type="button" id="add-bay-button" class="secondary-button edit-aisle-button">Add Bay</button>
+            <button type="submit" class="primary-button edit-aisle-button">Save Changes</button>
+          </div>
         </form>
       </div>
     </div>
-    <div id="add-aisle-form" class="modal" style="display: none">
+
+    <div id="add-aisle-form" class="modal" style="display: none;">
       <div class="modal-content">
-        <div class="top-form">
+        <div class="modal-header">
           <h2>Add New Aisle</h2>
           <button id="close-modal" class="closebtn">
-            <img src="assets/close.svg" class="dropdown" alt="" />
+            <img src="assets/close.svg" alt="Close" />
           </button>
         </div>
         <form id="aisle-form">
-          <label for="aisle-number">Aisle Number:</label>
-          <input type="text" id="aisle-number" required />
+          <div class="aisle-info">
+            <div class="form-group">
+              <label for="add-aisle-number">Aisle Number:</label>
+              <input
+                type="text"
+                id="add-aisle-number"
+                name="aisleNumber"
+                required
+                placeholder="Enter aisle number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="add-aisle-name">Aisle Name:</label>
+              <input
+                type="text"
+                id="add-aisle-name"
+                name="aisleName"
+                required
+                placeholder="Enter aisle name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="add-aisle-area">Aisle Area:</label>
+              <input
+                type="text"
+                id="add-aisle-area"
+                name="aisleArea"
+                required
+                placeholder="Enter aisle area"
+              />
+            </div>
+          </div>
+          <div class="aisle-bays">
+            <div class="form-group">
+              <label for="add-aisle-bays">Number of Bays:</label>
+              <input
+                type="number"
+                id="number-of-bays"
+                name="aisleBays"
+                required
+                placeholder="Enter number of bays"
+              />
+            </div>
+          </div>
+          <div id="bays-container">
+            <!-- Bays will be dynamically added here -->
+          </div>
+          <div class="form-actions">
+            <button type="button" id="generate-bays" class="secondary-button">
+              Generate Bays
+            </button>
 
-          <label for="aisle-name">Aisle Name:</label>
-          <input type="text" id="aisle-name" required />
-
-          <label for="aisle-area">Aisle Area:</label>
-          <input type="text" id="aisle-area" required />
-
-          <label for="number-of-bays">Number of Bays:</label>
-          <input type="number" id="number-of-bays" required />
-
-          <div id="bays-container"></div>
-
-          <button type="button" id="generate-bays">Generate Bays</button>
-          <button type="submit">Add Aisle</button>
+            <button type="submit" class="primary-button">Add Aisle</button>
+          </div>
         </form>
       </div>
     </div>
@@ -124,9 +184,10 @@
       <input type="hidden" id="edit-products-topstock-id" />
 
       <div id="edit-products-container"></div>
-
+      <div class="form-buttons">
       <button type="button" id="add-product-button">Add Product</button>
       <button type="submit">Save Changes</button>
+    </div>
     </form>
   </div>
 </div>
@@ -138,22 +199,26 @@
     </div>
 
     <div class="footer">
-      
-      
-      <div class="totals">
-        <p>Total Aisles: <span id="total-aisles">0</span> | </p>
-        <p>Total Bays: <span id="total-bays">0</span> | </p>
-        <p>Total Topstock: <span id="total-products">0</span> | Total free <span class="total-free-topstock">0</span></p>
-        
-      </div>
-
-      <div class="viewdash">
-        <p>Want More? : <a href="/dashboard">View Dashoard</a></p>
-      </div>
-
-      <div class="foot">
-        <p>Topstock Management System 2025</p>
-        <p>Developed by Dylan Coen (781422)</p>
+      <div class="footer-content">
+        <div class="footer-section totals">
+          <h4>Totals</h4>
+          <p>Total Aisles: <span id="total-aisles">0</span></p>
+          <p>Total Bays: <span id="total-bays">0</span></p>
+          <p>Total Topstocks: <span id="total-products">0</span></p>
+          <p>Total Free Topstocks: <span class="total-free-topstock">0</span></p>
+        </div>
+        <div class="footer-section links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard">View Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="footer-section about">
+          <h4>About</h4>
+          <p>Topstock Management System 2025 (v1.0.1)</p>
+          <p>Developed by Dylan Coen (781422)</p>
+        </div>
       </div>
     </div>
     
