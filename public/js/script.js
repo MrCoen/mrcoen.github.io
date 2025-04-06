@@ -441,50 +441,48 @@ function openEditModal(aisle) {
   const editBaysContainer = document.getElementById("edit-bays-container");
   editBaysContainer.innerHTML = ""; // Clear previous bays
 
-  aisle.bays.forEach((bay, bayIndex) => {
+  // Add each bay with location and topstock count input
+  aisle.bays.forEach((bay) => {
     const bayDiv = document.createElement("div");
     bayDiv.className = "bay-input";
 
+    const bayHeaderDiv = document.createElement("div");
+    bayHeaderDiv.className = "bay-head";
+    
+    const bayBodyDiv = document.createElement("div");
+  bayBodyDiv.className = "bay-body";
+
     const bayLabel = document.createElement("h3");
     bayLabel.textContent = `Bay ${bay.location}`;
-    bayDiv.appendChild(bayLabel);
+    bayHeaderDiv.appendChild(bayLabel);
+
+
+    const deleteBayButton = document.createElement("button");
+    deleteBayButton.textContent = "Delete Bay";
+    deleteBayButton.className = "delete-bay-button";
+    deleteBayButton.addEventListener("click", () => {
+      bayDiv.remove(); // Remove the bay from the DOM
+    });
+    bayHeaderDiv.appendChild(deleteBayButton);
+
 
     const bayLocationInput = document.createElement("input");
-    bayLocationInput.type = "text";
+    bayLocationInput.type = "number";
     bayLocationInput.value = bay.location;
     bayLocationInput.className = "edit-bay-location";
-    bayDiv.appendChild(bayLocationInput);
+    bayBodyDiv.appendChild(bayLocationInput);
 
-    const topstocksContainer = document.createElement("div");
-    topstocksContainer.className = "topstocks-container";
+    const bayTopstocksInput = document.createElement("input");
+    bayTopstocksInput.type = "number";
+    bayTopstocksInput.value = bay.topstocks ? bay.topstocks.length : 0; // Default to 0 if no topstocks
+    bayTopstocksInput.className = "edit-bay-topstocks";
+    bayTopstocksInput.placeholder = "Topstock Count";
+    bayBodyDiv.appendChild(bayTopstocksInput);
 
-    bay.topstocks.forEach((topstock, topstockIndex) => {
-      const topstockDiv = document.createElement("div");
-      topstockDiv.className = "topstock-input";
-
-      const topstockLabel = document.createElement("p");
-      topstockLabel.textContent = `Topstock ${topstockIndex + 1}`;
-      topstockDiv.appendChild(topstockLabel);
-
-      const productNameInput = document.createElement("input");
-      productNameInput.type = "text";
-      productNameInput.value = topstock.products[0].name;
-      productNameInput.placeholder = "Product Name";
-      productNameInput.className = "edit-product-name";
-      topstockDiv.appendChild(productNameInput);
-
-      const productBarcodeInput = document.createElement("input");
-      productBarcodeInput.type = "text";
-      productBarcodeInput.value = topstock.products[0].barcode;
-      productBarcodeInput.placeholder = "Barcode";
-      productBarcodeInput.className = "edit-product-barcode";
-      topstockDiv.appendChild(productBarcodeInput);
-
-      topstocksContainer.appendChild(topstockDiv);
-    });
-
-    bayDiv.appendChild(topstocksContainer);
-    editBaysContainer.appendChild(bayDiv);
+    
+    bayDiv.appendChild(bayHeaderDiv);
+    bayDiv.appendChild(bayBodyDiv);
+  editBaysContainer.appendChild(bayDiv);
   });
 
   // Show the modal
@@ -496,18 +494,117 @@ document.getElementById("close-edit-modal").addEventListener("click", () => {
   document.getElementById("edit-aisle-form").style.display = "none";
 });
 
-// ...existing code...
+// Add a new bay
+document.getElementById("add-bay-button").addEventListener("click", () => {
+  const editBaysContainer = document.getElementById("edit-bays-container");
 
+  const bayDiv = document.createElement("div");
+  bayDiv.className = "bay-input";
+
+  const bayHeaderDiv = document.createElement("div");
+    bayHeaderDiv.className = "bay-head";
+  
+  const bayBodyDiv = document.createElement("div");
+  bayBodyDiv.className = "bay-body";
+
+  const bayLabel = document.createElement("h3");
+  bayLabel.textContent = `Bay New`;
+  bayHeaderDiv.appendChild(bayLabel);
+  const deleteBayButton = document.createElement("button");
+  deleteBayButton.textContent = "Delete Bay";
+  deleteBayButton.className = "delete-bay-button";
+  deleteBayButton.addEventListener("click", () => {
+    bayDiv.remove(); // Remove the bay from the DOM
+  });
+  bayHeaderDiv.appendChild(deleteBayButton);
+
+  const bayLocationInput = document.createElement("input");
+  bayLocationInput.type = "text";
+  bayLocationInput.placeholder = "Bay Location";
+  bayLocationInput.className = "edit-bay-location";
+  bayBodyDiv.appendChild(bayLocationInput);
+
+  const bayTopstocksInput = document.createElement("input");
+  bayTopstocksInput.type = "number";
+  bayTopstocksInput.placeholder = "Topstock Count";
+  bayTopstocksInput.className = "edit-bay-topstocks";
+  bayBodyDiv.appendChild(bayTopstocksInput);
+
+  
+  bayDiv.appendChild(bayHeaderDiv);
+  bayDiv.appendChild(bayBodyDiv);
+  editBaysContainer.appendChild(bayDiv);
+});
+
+// Submit the updated aisle data
+document.getElementById("edit-aisle-form-content").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const aisleNumber = document.getElementById("edit-aisle-number").value;
+  const aisleName = document.getElementById("edit-aisle-name").value;
+  const aisleArea = document.getElementById("edit-aisle-area").value;
+
+  const bays = Array.from(document.querySelectorAll(".bay-input")).map((bayDiv) => {
+    const bayLocation = bayDiv.querySelector(".edit-bay-location").value;
+    const bayTopstocksCount = parseInt(bayDiv.querySelector(".edit-bay-topstocks").value, 10) || 0;
+
+    // Generate topstocks array based on the count
+    const topstocks = Array.from({ length: bayTopstocksCount }, (_, index) => ({
+      id: index + 1,
+      products: [],
+    }));
+
+    return { location: bayLocation, topstocks };
+  });
+
+  const updatedAisle = {
+    aisle: aisleNumber,
+    name: aisleName,
+    area: aisleArea,
+    bays: bays,
+  };
+
+  // Send the updated aisle data to the server
+  fetch(`/api/update-aisle/${aisleNumber}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(updatedAisle),
+  })
+    .then((response) => {
+      if (response.ok) {
+        alert("Aisle updated successfully!");
+        location.reload();
+      } else {
+        response.text().then((text) => alert(`Failed to update aisle: ${text}`));
+      }
+    })
+    .catch((error) => console.error("Error updating aisle:", error));
+});
 function openEditProductsModal(aisleNumber, bayLocation, topstock) {
   // Populate the modal with the topstock's current data
-  document.getElementById("edit-products-aisle-number").value = aisleNumber;
-  document.getElementById("edit-products-bay-location").value = bayLocation;
-  document.getElementById("edit-products-topstock-id").value = topstock.id;
+  document.getElementById("edit-products-aisle-number").placeholder = aisleNumber;
+  document.getElementById("edit-products-bay-location").placeholder = bayLocation;
+  document.getElementById("edit-products-topstock-id").placeholder = topstock.id;
+  console.log(topstock)
+  console.log(aisleNumber, bayLocation)
+  // document.querySelector('.edit-product-expdate').value = topstock.product.expdate
+  // document.querySelector('.edit-product-update').value = topstock.product.date
 
   const productsContainer = document.getElementById("edit-products-container");
+  productsContainer.className = "products-modal-container";
   productsContainer.innerHTML = ""; // Clear previous products
+  const noProds = document.createElement("p");
+  noProds.className = "no-products";
+  noProds.textContent = "No products in this topstock.";
+
+  if(topstock.products.length === 0){
+    productsContainer.appendChild(noProds);
+  }
 
   topstock.products.forEach((product, productIndex) => {
+    productsContainer.innerHTML = ""; // Clear previous products
     const productDiv = document.createElement("div");
     productDiv.className = "product-input";
 
@@ -515,16 +612,16 @@ function openEditProductsModal(aisleNumber, bayLocation, topstock) {
     prodInfo.className = "prod-info";
 
     const prodDate = document.createElement("div");
-    prodInfo.className = "prod-date";
+    prodDate.className = "prod-date";
 
     const prodExt = document.createElement("div");
-    prodInfo.className = "prod-ext";
+    prodExt.className = "prod-ext";
 
   const productNameLabel = document.createElement("label");
   productNameLabel.textContent = "Product Name:";
   const productNameInput = document.createElement("input");
   productNameInput.type = "text";
-  productNameInput.placeholder = "Product Name";
+  productNameInput.value = product.name || "";
   productNameInput.className = "edit-product-name";
   prodInfo.appendChild(productNameInput);
 
@@ -532,7 +629,7 @@ function openEditProductsModal(aisleNumber, bayLocation, topstock) {
   productBarcodeLabel.textContent = "Barcode:";
   const productBarcodeInput = document.createElement("input");
   productBarcodeInput.type = "text";
-  productBarcodeInput.placeholder = "Barcode";
+  productBarcodeInput.value = product.barcode || "";
   productBarcodeInput.className = "edit-product-barcode";
   prodInfo.appendChild(productBarcodeInput);
 
@@ -540,37 +637,49 @@ function openEditProductsModal(aisleNumber, bayLocation, topstock) {
   productQuantityLabel.textContent = "Quantity:";
   const productQuantityInput = document.createElement("input");
   productQuantityInput.type = "number";
-  productQuantityInput.placeholder = "Quantity";
+  productQuantityInput.value = product.quantity || 0;
   productQuantityInput.className = "edit-product-quantity";
   prodExt.appendChild(productQuantityInput);
+
+
+  const prodexdiv = document.createElement('div')
+  prodexdiv.className = 'prodexdiv'
 
   const productExpDateLabel = document.createElement("label");
   productExpDateLabel.textContent = "Expiry Date:";
   const productExpDateInput = document.createElement("input");
   productExpDateInput.type = "date";
-  productExpDateInput.placeholder = "Expiry Date";
+  productExpDateInput.value = product.expdate || "";
   productExpDateInput.className = "edit-product-expdate";
-  prodDate.appendChild(productExpDateInput);
+  prodexdiv.appendChild(productExpDateLabel)
+  prodexdiv.appendChild(productExpDateInput);
+
+
+    const produpdiv = document.createElement('div') 
+    produpdiv.className = 'produpdiv'
 
   const productUpdateDateInput = document.createElement("label");
-  productUpdateDateInput.type = "Date:";
+  productUpdateDateInput.textContent = "Date:";
   const productupdate = document.createElement("input");
   productupdate.type = "date";
-  productupdate.placeholder = "Date";
+  productupdate.value = product.date || "";
   productupdate.className = "edit-product-update";
-  prodDate.appendChild(productupdate);
+  produpdiv.appendChild(productUpdateDateInput)
+  produpdiv.appendChild(productupdate);
 
 
   const productDepartmentLabel = document.createElement("label");
   productDepartmentLabel.textContent = "Department:";
   const productDepartment = document.createElement("input");
   productDepartment.type = "text";
-  productDepartment.placeholder = "Product Department";
-  productDepartment.className = "edit-product-barcode";
+  productDepartment.value = product.department || "";
+  productDepartment.className = "edit-product-department";
   prodExt.appendChild(productDepartment);
 
   productDiv.appendChild(prodInfo)
   productDiv.appendChild(prodExt)
+  prodDate.appendChild(produpdiv)
+  prodDate.appendChild(prodexdiv)
   productDiv.appendChild(prodDate)
 
     // Add a delete button for the product
@@ -600,41 +709,49 @@ document
 document.getElementById("add-product-button").addEventListener("click", () => {
   const productsContainer = document.getElementById("edit-products-container");
 
+  
+  const noProds = document.querySelector(".no-products")
+
+  if(noProds !== null){
+    noProds.remove()
+  }else{
+   
+  
+
   const productDiv = document.createElement("div");
   productDiv.className = "product-input";
 
   const prodInfo = document.createElement("div");
     prodInfo.className = "prod-info";
 
-    const prodDate = document.createElement("div");
+  const prodDate = document.createElement("div");
     prodInfo.className = "prod-date";
 
-    const prodExt = document.createElement("div");
+  const prodExt = document.createElement("div");
     prodInfo.className = "prod-ext";
 
-  const productNameLabel = document.createElement("label");
-  productNameLabel.textContent = "Product Name:";
+
   const productNameInput = document.createElement("input");
   productNameInput.type = "text";
   productNameInput.placeholder = "Product Name";
   productNameInput.className = "edit-product-name";
   prodInfo.appendChild(productNameInput);
 
-  const productBarcodeLabel = document.createElement("label");
-  productBarcodeLabel.textContent = "Barcode:";
   const productBarcodeInput = document.createElement("input");
   productBarcodeInput.type = "text";
   productBarcodeInput.placeholder = "Barcode";
   productBarcodeInput.className = "edit-product-barcode";
   prodInfo.appendChild(productBarcodeInput);
 
-  const productQuantityLabel = document.createElement("label");
-  productQuantityLabel.textContent = "Quantity:";
+  
   const productQuantityInput = document.createElement("input");
   productQuantityInput.type = "number";
   productQuantityInput.placeholder = "Quantity";
   productQuantityInput.className = "edit-product-quantity";
   prodExt.appendChild(productQuantityInput);
+  
+    const prodexdiv = document.createElement('div')
+    prodexdiv.className = 'prodexdiv'
 
   const productExpDateLabel = document.createElement("label");
   productExpDateLabel.textContent = "Expiry Date:";
@@ -642,15 +759,20 @@ document.getElementById("add-product-button").addEventListener("click", () => {
   productExpDateInput.type = "date";
   productExpDateInput.placeholder = "Expiry Date";
   productExpDateInput.className = "edit-product-expdate";
-  prodDate.appendChild(productExpDateInput);
+  prodexdiv.appendChild(productExpDateLabel)
+  prodexdiv.appendChild(productExpDateInput);
+
+  const produpdiv = document.createElement('div')
+  produpdiv.className = 'produpdiv'
 
   const productUpdateDateInput = document.createElement("label");
-  productUpdateDateInput.type = "Date:";
+  productUpdateDateInput.textContent = "Date:";
   const productupdate = document.createElement("input");
   productupdate.type = "date";
   productupdate.placeholder = "Date";
   productupdate.className = "edit-product-update";
-  prodDate.appendChild(productupdate);
+  produpdiv.appendChild(productUpdateDateInput)
+  produpdiv.appendChild(productupdate);
 
 
   const productDepartmentLabel = document.createElement("label");
@@ -658,11 +780,13 @@ document.getElementById("add-product-button").addEventListener("click", () => {
   const productDepartment = document.createElement("input");
   productDepartment.type = "text";
   productDepartment.placeholder = "Product Department";
-  productDepartment.className = "edit-product-barcode";
+  productDepartment.className = "edit-product-department";
   prodExt.appendChild(productDepartment);
 
   productDiv.appendChild(prodInfo)
   productDiv.appendChild(prodExt)
+  prodDate.appendChild(produpdiv)
+  prodDate.appendChild(prodexdiv)
   productDiv.appendChild(prodDate)
   
 
@@ -676,6 +800,9 @@ document.getElementById("add-product-button").addEventListener("click", () => {
   productDiv.appendChild(deleteProductButton);
 
   productsContainer.appendChild(productDiv);
+
+}
+
 });
 
 // Submit the updated products
@@ -748,66 +875,4 @@ document
       })
       .catch((error) => console.error("Error updating products:", error));
   });
-document
-  .getElementById("edit-aisle-form-content")
-  .addEventListener("submit", (e) => {
-    e.preventDefault();
 
-    const aisleNumber = document.getElementById("edit-aisle-number").value;
-    const aisleName = document.getElementById("edit-aisle-name").value;
-    const aisleArea = document.getElementById("edit-aisle-area").value;
-
-    const bays = Array.from(document.querySelectorAll(".bay-input")).map(
-      (bayDiv, bayIndex) => {
-        const bayLocation =
-          bayDiv.querySelector(".edit-bay-location").value ||
-          `00${bayIndex + 1}`;
-        const topstocks = Array.from(
-          bayDiv.querySelectorAll(".topstock-input")
-        ).map((topstockDiv, topstockIndex) => ({
-          id: topstockIndex + 1,
-          products: [
-            {
-              name: topstockDiv.querySelector(".edit-product-name").value,
-              barcode: topstockDiv.querySelector(".edit-product-barcode").value,
-              quantity: 0,
-              expdate: "",
-              date: "",
-              department: "",
-            },
-          ],
-        }));
-
-        return { location: bayLocation, topstocks };
-      }
-    );
-
-    const updatedAisle = {
-      aisle: aisleNumber,
-      name: aisleName,
-      area: aisleArea,
-      bays: bays,
-    };
-
-    // Send the updated aisle data to the server
-    fetch(`/api/update-aisle/${aisleNumber}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(updatedAisle),
-    })
-      .then((response) => {
-        if (response.ok) {
-          alert("Aisle updated successfully!");
-          location.reload();
-        } else {
-          response
-            .text()
-            .then((text) => alert(`Failed to update aisle: ${text}`));
-        }
-      })
-      .catch((error) => console.error("Error updating aisle:", error));
-  });
-
-  
