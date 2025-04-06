@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Extract CSS variables for colors
+  const rootStyles = getComputedStyle(document.documentElement);
+  const colorPrimary = rootStyles.getPropertyValue("--color-primary").trim();
+  const colorPrimaryLight = rootStyles.getPropertyValue("--color-primary-light").trim();
+  const colorPrimaryDark = rootStyles.getPropertyValue("--color-primary-dark").trim();
+  const colorSecondary = rootStyles.getPropertyValue("--color-secondary").trim();
+  const colorSecondaryLight = rootStyles.getPropertyValue("--color-secondary-light").trim();
+  const colorSecondaryDark = rootStyles.getPropertyValue("--color-secondary-dark").trim();
+
   fetch("/api/aisles")
     .then((response) => response.json())
     .then((data) => {
@@ -113,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
           datasets: [
             {
               data: [totalFreeTopstocks, totalTopstocks - totalFreeTopstocks],
-              backgroundColor: ["#FF6384", "#36A2EB"],
+              backgroundColor: [colorPrimaryLight, colorPrimary],
             },
           ],
         },
@@ -137,12 +146,12 @@ document.addEventListener("DOMContentLoaded", () => {
             {
               data: Object.values(departmentUsage),
               backgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56",
-                "#4BC0C0",
-                "#9966FF",
-                "#FF9F40",
+                colorPrimary,
+                colorPrimaryLight,
+                colorPrimaryDark,
+                colorSecondary,
+                colorSecondaryLight,
+                colorSecondaryDark,
               ],
             },
           ],
@@ -179,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
             datasets: [
               {
                 data: [used, total - used],
-                backgroundColor: ["#36A2EB", "#FF6384"],
+                backgroundColor: [colorSecondary, colorSecondaryLight],
               },
             ],
           },
