@@ -1,187 +1,36 @@
 [
   {
     "aisle": "001",
-    "name": "Building Aggregates",
+    "name": "Building",
     "area": "Building",
     "bays": [
       {
-        "location": "03",
+        "location": "02",
         "topstocks": [
           {
             "id": 1,
             "products": [
               {
-                "name": "Multi-finish",
-                "barcode": "1234567890",
-                "quantity": 56,
-                "expdate": "2025-03-20",
-                "date": "2025-03-29",
-                "department": "building"
+                "name": "Multi-Finish",
+                "barcode": "3663602123456",
+                "quantity": 23,
+                "expdate": "2025-04-13",
+                "date": "2025-04-05",
+                "department": "Building"
+              },
+              {
+                "name": "Blue Circle Cememnt",
+                "barcode": "56782135678",
+                "quantity": 65,
+                "expdate": "2025-04-08",
+                "date": "2025-04-06",
+                "department": "Building"
               }
             ]
           },
           {
             "id": 2,
-            "products": [
-              {
-                "name": "Storage Boxes",
-                "barcode": "2653216543220",
-                "quantity": 87,
-                "expdate": "2025-03-12",
-                "date": "2025-03-27",
-                "department": "showrooms"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "location": "04",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [
-              {
-                "name": "",
-                "barcode": "",
-                "quantity": 0,
-                "expdate": "",
-                "date": "",
-                "department": ""
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "products": [
-              {
-                "name": "",
-                "barcode": "",
-                "quantity": 0,
-                "expdate": "",
-                "date": "",
-                "department": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "location": "05",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [
-              {
-                "name": "",
-                "barcode": "",
-                "quantity": 0,
-                "expdate": "",
-                "date": "",
-                "department": ""
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "products": [
-              {
-                "name": "",
-                "barcode": "",
-                "quantity": 0,
-                "expdate": "",
-                "date": "",
-                "department": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "location": "06",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [
-              {
-                "name": "",
-                "barcode": "",
-                "quantity": 0,
-                "expdate": "",
-                "date": "",
-                "department": ""
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "products": [
-              {
-                "name": "",
-                "barcode": "",
-                "quantity": 0,
-                "expdate": "",
-                "date": "",
-                "department": ""
-              }
-            ]
-          },
-          {
-            "id": 3,
-            "products": [
-              {
-                "name": "",
-                "barcode": "",
-                "quantity": 0,
-                "expdate": "",
-                "date": "",
-                "department": ""
-              }
-            ]
-          },
-          {
-            "id": 4,
-            "products": [
-              {
-                "name": "",
-                "barcode": "",
-                "quantity": 0,
-                "expdate": "",
-                "date": "",
-                "department": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "location": "07",
-        "topstocks": [
-          {
-            "id": 1,
-            "products": [
-              {
-                "name": "",
-                "barcode": "",
-                "quantity": 0,
-                "expdate": "",
-                "date": "",
-                "department": ""
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "products": [
-              {
-                "name": "",
-                "barcode": "",
-                "quantity": 0,
-                "expdate": "",
-                "date": "",
-                "department": ""
-              }
-            ]
+            "products": []
           }
         ]
       }
