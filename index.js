@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = 3300;
 
 // Load aisles data from the JSON file
 const aislesFilePath = path.join(__dirname, 'data', 'aisles.json');
